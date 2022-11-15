@@ -1,0 +1,120 @@
+@import 'libs/_normalize.css';
+@import 'fonts/fonts';
+
+body {
+  font-family: 'Fontawesome';
+  background: url('./img/image.jpg'); 
+  background-size: cover;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  .form {
+    position: relative;
+    display: flex;
+
+    .transform_input{
+      display: inline-block;
+      width: 400px;
+      height: 50px;
+      transform: skew(-40deg, 0deg);
+      background: rgba(255, 255, 255, 0.6);
+      border: 2px solid #ffffff;
+
+      @media (max-width: 615px) {
+        width: 300px;
+      }
+  
+      @media (max-width: 530px) {
+        width: 220px;
+        transform: skew(0deg, 0deg);
+      }
+      @media (max-width: 380px) {
+        width: 160px;
+      }
+    }
+
+    .transform_input._error{
+      box-shadow: 0 0 15px red;
+    }
+
+    .input {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      width: 350px;
+      height: 23px;
+      padding: 15px 0px 15px 25px;
+      font-size: 18px;
+      color: #3a3a3a;
+      background-color: transparent;
+      border: 0;
+      outline: none;
+
+      @media (max-width: 615px) {
+        width: 250px;
+      }
+
+      @media (max-width: 530px) {
+        width: 170px;
+      }
+
+      @media (max-width: 380px) {
+        width: 110px;
+      }
+    }
+      
+    .button {
+      width: 150px;
+      height: 54px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transform: skew(-40deg, 0deg);
+      color: #ffffff;
+      background-color: rgb(248, 0, 0);
+      border:2px solid #ffffff;
+
+      @media (max-width: 530px) {
+        width: 140px;
+        transform: skew(0deg, 0deg);
+      }
+
+      @media (max-width: 380px) {
+        width: 90px;
+      }
+
+      span{
+        display: inline-block;
+        transform: skew(40deg, 0deg);
+        color: white;
+        font-size: 14px;
+
+        @media (max-width: 530px) {
+        transform: skew(0deg, 0deg);
+        }
+      }
+
+      .fa-solid{
+        transform: skew(40deg, 0deg);
+        padding-left: 6px;
+
+        @media (max-width: 530px) {
+          transform: skew(0deg, 0deg);
+          padding: 0;
+          }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+  
